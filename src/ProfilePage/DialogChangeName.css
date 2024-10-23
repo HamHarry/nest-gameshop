@@ -1,0 +1,142 @@
+.container-dialog-ChangeName {
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  width: 800px;
+  height: 500px;
+  background-color: black;
+  border: 5px solid red;
+  border-radius: 25px;
+}
+.nav-dialog {
+  display: flex;
+  justify-content: end;
+  height: 50px;
+}
+.fa-circle-xmark {
+  color: white;
+  font-size: 40px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.fa-circle-xmark:hover {
+  color: red;
+}
+.warp-dialog {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "REM", sans-serif;
+  color: white;
+  gap: 20px;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.edit-fname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.edit-fname input {
+  width: 300px;
+  border-radius: 25px;
+  border: 2px solid red;
+  padding: 20px;
+}
+.edit-lname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.edit-lname input {
+  width: 300px;
+  border-radius: 25px;
+  border: 2px solid red;
+  padding: 20px;
+}
+.edit-birthdate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.edit-birthdate input {
+  width: 300px;
+  border-radius: 25px;
+  border: 2px solid red;
+  padding: 20px;
+  margin-left: 30px;
+}
+.edit-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.edit-email input {
+  width: 300px;
+  border-radius: 25px;
+  border: 2px solid red;
+  padding: 20px;
+  margin-left: 70px;
+}
+.btn-edit-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  border: 2px solid red;
+  border-radius: 25px;
+  font-family: "REM", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+}
+.btn-edit-submit:hover {
+  color: red;
+}
+
+@media (max-width: 393px) {
+  .container-dialog-ChangeName {
+    width: 350px;
+    height: 450px;
+  }
+  .warp-dialog {
+    font-size: 18px;
+    gap: 20px;
+  }
+  .edit-fname input {
+    max-width: 150px;
+    padding: 15px;
+  }
+  .edit-lname input {
+    max-width: 150px;
+    padding: 15px;
+  }
+  .edit-birthdate input {
+    max-width: 150px;
+    padding: 15px;
+    height: 15px;
+    margin-left: 20px;
+  }
+  .edit-email input {
+    max-width: 150px;
+    padding: 15px;
+    margin-left: 40px;
+  }
+  .btn-edit-submit {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}

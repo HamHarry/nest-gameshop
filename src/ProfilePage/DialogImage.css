@@ -1,0 +1,177 @@
+.container-dialog-editImage {
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  width: 800px;
+  height: 500px;
+  background-color: black;
+  border: 5px solid red;
+  border-radius: 25px;
+}
+.nav-dialog {
+  display: flex;
+  justify-content: end;
+  height: 50px;
+}
+.fa-circle-xmark {
+  color: white;
+  font-size: 40px;
+  margin: 10px;
+  cursor: pointer;
+}
+.fa-circle-xmark:hover {
+  color: red;
+}
+.inputImageURL {
+  margin-top: -20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.inputImageURL h3 {
+  color: white;
+  font-size: 32px;
+  margin-right: 280px;
+  font-family: "REM", sans-serif;
+  margin-top: 20px;
+}
+.inputImageURL input {
+  width: 400px;
+  padding: 10px;
+  border-radius: 25px;
+}
+.URL {
+  display: flex;
+  gap: 20px;
+}
+.submit-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+}
+.submit-image:hover {
+  color: red;
+}
+.submit-image p {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "REM", sans-serif;
+}
+.inputImageFile {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.ImageUrl {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+.uploadfile {
+  border-radius: 25px;
+  border: 2px solid red;
+  color: white;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 50px;
+}
+.uploadfile:hover {
+  color: red;
+}
+.uploadfile input {
+  display: none;
+}
+.uploadfile label {
+  cursor: pointer;
+  font-family: "REM", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+.btn-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border: 2px solid red;
+  background-color: black;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.btn-upload p {
+  color: white;
+  font-family: "REM", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-upload p:hover {
+  color: red;
+}
+.showImage {
+  display: flex;
+  justify-content: center;
+}
+.showImage img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+
+@media (max-width: 393px) {
+  .container-dialog-editImage {
+    width: 300px;
+    height: 500px;
+  }
+  .showImage img {
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+  }
+  .inputImageURL {
+    margin-top: -40px;
+  }
+  .inputImageURL h3 {
+    font-size: 18px;
+    margin-right: 90px;
+    margin-top: 20px;
+  }
+  .URL {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputImageURL input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  .btn-upload {
+    width: 100px;
+    height: 40px;
+  }
+  .btn-upload p {
+    font-size: 15px;
+  }
+}

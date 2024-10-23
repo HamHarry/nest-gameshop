@@ -1,0 +1,112 @@
+.container-signup {
+  background-image: url("/public/assets/wallpaper.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.warp-signup {
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  backdrop-filter: blur(10px);
+  width: 600px;
+  height: 800px;
+  border: 2px solid red;
+  font-family: "REM", sans-serif;
+  border-radius: 25px;
+}
+.warp-signup h1 {
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  font-size: 64px;
+}
+.warp-signup h2 {
+  color: white;
+  font-size: 28px;
+  text-shadow: 5px 5px 10px black;
+  margin-top: 10px;
+}
+.warp-signup p {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.warp-signup input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+}
+.btn-signup {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  font-family: "REM", sans-serif;
+  font-size: 24px;
+}
+.btn-signup button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  font-family: "REM", sans-serif;
+  font-size: 24px;
+  border: 2px solid red;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  background-color: black;
+  border-radius: 10px;
+  font-family: "REM", sans-serif;
+  font-weight: bold;
+}
+.btn:hover {
+  color: red;
+}
+
+@media (max-width: 393px) {
+  .warp-signup {
+    width: 350px;
+    height: 600px;
+  }
+  .warp-signup h1 {
+    font-size: 32px;
+  }
+  .warp-signup h2 {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .warp-signup input {
+    width: 92%;
+    height: 10px;
+  }
+  .signin-birthdate {
+    width: 92%;
+  }
+  .btn-signup button {
+    font-size: 17px;
+  }
+  .warp-signup p {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .btn {
+    height: 40px;
+    width: 80px;
+  }
+}
